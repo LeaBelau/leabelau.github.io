@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--___PRODUCT_BUILD___ (___PRODUCT_COMMENTS___) ___PRODUCT_DATE___-->
+
+<html>
+<head>
+    <title>Chat Test Page #2</title>
+</head>
+<body>
+<br>
+<br>
+<a href="https://leabelau.github.io/page1.html"> Jump back to Page #1</a>
+<br>
+<br>
+<br>
+<br>
+<a href="https://leabelau.github.io/level1/level2/page3.html">
+  <img src="https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage_2x.png" alt="jump to page #3" style="width:42px;height:42px;border:0">
+</a>
+<br>
+<br>
+<p id="demo">Check JavaScript</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
+<button type="button" onclick="myFunction()">Click Me!</button>
+<br>
+<br>
+
+<button type="button"
+onclick="document.getElementById('demo2').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo2"></p>
+
+<br><br><br><br><br>
+<a href="https://leabelau.github.io/550-level1/level2/page3.html">Jump to Page #3 in a separate Tab>>>> </a>
+
+
+<!-- You have to put this piece of JavaScript code into your web page -->
+
+<link type="text/css" rel="stylesheet" href="https://lea-550.pl.bugfocus.com/clientweb/chat-client-v4/css/form.css">
+<script type="text/javascript">
+    SERVICE_PATTERN_CHAT_CONFIG = {
+        appId: '333',
+        apiUrl: 'https://lea-550.pl.bugfocus.com/clientweb/api/v1',
+        tenantUrl: 'lea-550.pl.bugfocus.com',
+        chatPath: 'https://lea-550.pl.bugfocus.com/clientweb/chat-client-v4/'
+
+        /*        
+         // Default customer data, it can be collected on current site's context
+         first_name: '',
+         last_name: '',
+         email: '',
+         phone_number: ''
+ 		*/
+    };
+</script>
+<script src="https://lea-550.pl.bugfocus.com/clientweb/chat-client-v4/js/init.js"></script> 
+
+</body>
+</html>
