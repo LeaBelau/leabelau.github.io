@@ -1,0 +1,40 @@
+<!doctype html> <html>
+<head>
+<title>Agent Desktop</title>
+<base href="domain.com/agentdesktop/"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> <meta name="gwt:property" content="locale=en_US">
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="chrome-webstore-item" href="​https://chrome.google.com/webstore/detail/mkaocfkkgijdkejknbfblgf belppnfci">
+<link rel="stylesheet" href="ad- theme/css/styles.css?build=5.3.12.49078" type="text/css">
+<div id="iCSIMExtensionInstalled" ext_version="1"></div>
+<script type="text/javascript"> window.tenantUrl = "domain.com"; window.bp_title = "Agent Desktop"; window.bp_companyName = "Bright Pattern"; window.bp_productName = "ServicePattern?"; window.buildVersion = "5.3.12.49078"; window.pluginVersion = "5.3.3.44190"; window.baseURI = window.location.protocol +
+".../agentdesktop/"; window.enableMacPlugin = true;
+window.muteRecordingIfNotReady = false; window.hideErrorBar = false; window.autoAnswerAllCalls = false; window.serverSupportWS = false;
+window.deviceConfig = {"softphone":false,"defaultHardphone":false,"hardphone":false,"virtualS oftphone":false,"externalPhone":false,"webRtc":false,"without":false,"p honeMode":"SOFTPHONE"};
+window.focus = function () { window.focus();
+}
+window.scookie = false; </script>
+<script type="text/javascript" src="bpclient.js?build=5.3.12.49078"></script>
+<script type="text/javascript" src="tz/tz.js?build=5.3.12.49078"></script>
+<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="agentdesktop/servlet/messages.js?build=5.3.12.49078&locale=en_US"> </script>
+<script type="text/javascript" src="agentdesktop/agentdesktop.nocache.js"></script>
+<script>
+sessionId ="" function startVNC() {
+BPClient.initHelper()
+BPClient.create()
+BPClient.vncInit("127.0.0.1", "ALL", "512", "0")
+sessionId = BPClient.vncStartRecording("127.0.0.1", "443",
+"record_test") }
+function stopVNC() {
+BPClient.vncStopRecording(sesssionId) }
+</script> </head>
+<body>
+<!-- DO NOT DELETE -->
+<div id='ADHelperCheck'></div>
+<iframe src="javascript:" id="gwt_historyFrame" tabIndex='-1' width="0" height="0" frameborder="0" style="position:absolute;border:none"></iframe>
+<noscript>
+Your web browser must have JavaScript? enabled in order for this
+application to display correctly. </noscript>
+<button type="button" onclick="startVNC()">Start VNC </button> <br/> <button type="button" onclick="stopVNC()">Stop VNC</button>
+</body> </html>
