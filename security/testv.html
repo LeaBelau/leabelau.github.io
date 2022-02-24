@@ -1,0 +1,51 @@
+<!doctype html>
+<html> 
+<head>
+<title>Agent Desktop</title>
+<script type="text/javascript" src="bpclient.js"></script>
+   
+<script>
+
+
+function initHelperApp()
+{
+
+BPClient.initHelper();
+BPClient.create();
+
+}
+
+
+function startVNC() {
+
+console.log('instanceId' + BPClient.instanceId)
+BPClient.vncInit("gulfdmz4.brightpattern.com", "ALL", "512", "0")
+sessionId = BPClient.vncStartRecording("gulfdmz4.brightpattern.com", "45170", "record_test")
+console.log('session: ' +sessionId) 
+}
+
+function stopVNC() {
+BPClient.vncStopRecording(sessionId)
+}
+</script>
+ 
+</head>
+<body>
+
+<div id='ADHelperCheck'></div>
+<div id="iCSIMExtensionInstalled" ext_version="1.17"></div>
+
+<button type="button" onclick="startVNC()">Start VNC </button> <br/>
+<button type="button" onclick="stopVNC()">Stop VNC</button>
+
+
+<script>
+sessionId ="";
+
+BPClient.addEventHandler("helper_up", this.initHelperApp);
+
+
+</script>
+
+</body>
+</html>
