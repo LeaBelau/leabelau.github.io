@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Test Page</title>
+    <basefont color="black" size="5">
+    <base target=""> 
+  
+  </head>
+  <body>
+    <div id="top" class="page" role="document">
+      <header role="banner">
+        <h1>HTML5 Test Page</h1>
+        <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
+        
+        
+        <style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+        
+      </header>
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#text">Text</a>
+            <ul>
+              <li><a href="#text__headings">Headings</a></li>
+              <li><a href="#text__paragraphs">Paragraphs</a></li>
+              <li><a href="#text__blockquotes">Blockquotes</a></li>
+              <li><a href="#text__lists">Lists</a></li>
+              <li><a href="#text__hr">Horizontal rules</a></li>
+              <li><a href="#text__tables">Tabular data</a></li>
+              <li><a href="#text__code">Code</a></li>
+              <li><a href="#text__inline">Inline elements</a></li>
+              <li><a href="#text__comments">HTML Comments</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#embedded">Embedded content</a>
+            <ul>
+              <li><a href="#embedded__images">Images</a></li>
+              <li><a href="#embedded__audio">Audio</a></li>
+              <li><a href="#embedded__video">Video</a></li>
+              <li><a href="#embedded__canvas">Canvas</a></li>
+              <li><a href="#embedded__meter">Meter</a></li>
+              <li><a href="#embedded__progress">Progress</a></li>
+              <li><a href="#embedded__svg">Inline SVG</a></li>
+              <li><a href="#embedded__iframe">IFrames</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#forms">Form elements</a>
+            <ul>
+              <li><a href="#forms__input">Input fields</a></li>
+              <li><a href="#forms__select">Select menus</a></li>
+              <li><a href="#forms__checkbox">Checkboxes</a></li>
+              <li><a href="#forms__radio">Radio buttons</a></li>
+              <li><a href="#forms__textareas">Textareas</a></li>
+              <li><a href="#forms__html5">HTML5 inputs</a></li>
+              <li><a href="#forms__action">Action buttons</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main role="main">
+        <section id="text">
+          <header><h1>Text</h1></header>
+          <article id="text__headings">
+            <header>
+              <h1>Headings</h1>
+            </header>
+            <div>
+                                      
+              <h1>Heading 1 test</h1>
+              <h2>Heading 2 test</h2>
+              <h3>Heading 3 test</h3>
+              <h4>Heading 4 test</h4>
+              <h5>Heading 5 test</h5>
+              <h6>Heading 6 test</h6>
+                         
+             
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          
+          
+          
+          
+          
+          
+          <h2 style="color: pink;">Basic block level elements</h2>
+
+<span style="color:blue"><p>This is a normal paragraph where span is used to  color the text in blue color  (<code>p</code> element).
+To add some length to it, let us mention that this page was
+primarily written for testing the effect of <strong>user style sheets</strong>.
+You can use it for various other purposes as well, like just checking how
+your browser displays various HTML elements by default.
+It can also be useful when testing conversions from HTML
+format to other formats, since some elements can go wrong then.</p> 
+<p>This is another paragraph. I think it needs to be added that
+the set of elements tested is not exhaustive in any sense. I have selected
+those elements for which it can make sense to write user style sheet rules,
+in my opionion.</p>
+<div>This is a <code>div</code> element. Authors may use such elements instead
+of paragraph markup for various reasons. (End of <code>div</code>.)</div>
+<blockquote><p>This is a block quotation containing a single
+paragraph. Well, not quite, since this is not <em>really</em>
+quoted text, but I hope you understand the point. After all, this
+page does not use HTML markup very normally anyway.</p></blockquote>
+<p>The following contains address information about the author, in an <code>address</code>
+element.</p></span>
+<address>
+<a href="../personal.html" lang="fi" hreflang="en">Jukka Korpela</a>,
+<a href="mailto:jukkakk@gmail.com">jukkakk@gmail.com</A><br>
+Päivänsäteenkuja 4 A, Espoo, Finland
+</address>
+
+<h2 style="color: #731768;">Lists</h2>
+
+<p>This is a paragraph before an <strong>unnumbered</strong> list (<code>ul</code>). Note that
+the spacing between a paragraph and a list before or after that is hard
+to tune in a user style sheet. You can't guess which paragraphs are
+logically related to a list, e.g. as a "list header".</p>
+<ul>
+  <li> One.
+  <li> Two.
+  <li> Three. Well, probably this list item should be longer. Note that
+for short items lists look better if they are compactly presented,
+       whereas for long items, it would be better to have more vertical spacing between items.
+  <li> Four. This is the last item in this list.
+       Let us terminate the list now without making any more fuss about it.
+</ul>
+<p>The following is a <code>menu</code> list:</p>
+<menu>
+  <li> One.
+  <li> Two.
+  <li> Three. Well, probably this list item should be longer so that it will
+probably wrap to the next line in rendering.
+</menu>
+<p>The following is a <code>dir</code> list:</p>
+<dir>
+  <li> One.
+  <li> Two.
+  <li> Three. Well, probably this list item should be longer so that it will
+probably wrap to the next line in rendering.
+</dir>
+
+<p>This is a paragraph before a <strong>numbered</strong> list (<code>ol</code>). Note that
+the spacing between a paragraph and a list before or after that is hard
+to tune in a user style sheet. You can't guess which paragraphs are
+logically related to a list, e.g. as a "list header".</p>
+<ol>
+  <li> One.
+  <li> Two.
+  <li> Three. Well, probably this list item should be longer. Note that if
+items are short, lists look better if they are compactly presented,
+       whereas for long items, it would be better to have more vertical spacing between items.
+  <li> Four. This is the last item in this list.
+       Let us terminate the list now without making any more fuss about it.
+</ol>
+
+<p>This is a paragraph before a <strong>definition</strong> list (<code>dl</code>).
+In principle, such a list should consist of <em>terms</em> and associated 
+definitions.
+But many authors use <code>dl</code> elements for fancy "layout" things. Usually the
+effect is not <em>too</em> bad, if you design user style sheet rules for <code>dl</code>
+which are suitable
+for real definition lists.
+<dl>
+  <dt> recursion
+  <dd> see recursion
+  <dt> recursion, indirect
+  <dd> see indirect recursion
+  <dt> indirect recursion
+  <dd> see recursion, indirect
+  <dt> term
+  <dd> a word or other expression taken into specific use in
+       a well-defined meaning, which is often defined rather rigorously, even
+       formally, and may differ quite a lot from an everyday meaning
+</dl>
+
+<h2 style="background-color: steelblue;">Text-level markup with custom tags</h2>
+<custom>
+<ul>
+  <li> <abbr title="Cascading Style Sheets">CSS</abbr> (an abbreviation;
+ <code>abbr</code> markup used)
+  <li> <acronym title="radio detecting and ranging">radar</acronym> (an acronym; <code>acronym</code> markup used)
+  <li> <b>bolded</b> (<code>b</code> markup used - just bolding with unspecified
+       semantics)
+  <li> <big>big thing</big> (<code>big</code> markup used)
+  <li> <font size=6>large size</font> (<code>font size=6</code> markup used)
+  <li> <font face=Courier>Courier font</font> (<code>font face=Courier</code> markup used)
+  <li> <font color=red>red text</font> (<code>font color=red</code> markup used)
+  <li> <cite>Origin of Species</cite> (a book title;
+       <code>cite</code> markup used)
+  <li> <code>a[i] = b[i] + c[i);</code> (computer code; <code>code</code> markup used)
+  <li> here we have some <del>deleted</del> text (<code>del</code> markup used)
+  <li> an <dfn>octet</dfn> is an entity consisting of eight bits
+       (<code>dfn</code> markup used for the term being defined)
+  <li> this is <em>very</em> simple (<code>em</code> markup used for emphasizing
+       a word)
+  <li> <i lang="la">Homo sapiens</i> (should appear in italics;  <code>i</code> markup used)
+  <li> here we have some <ins>inserted</ins> text (<code>ins</code> markup used)
+  <li> type <kbd>yes</kbd> when prompted for an answer (<code>kbd</code> markup
+       used for text indicating keyboard input)
+  <li> <q>Hello!</q> (<code>q</code> markup used for quotation)
+  <li> He said: <q>She said <q>Hello!</q></q> (a quotation inside a quotation)
+  <li> you may get the message <samp>Core dumped</samp> at times
+       (<code>samp</code> markup used for sample output)
+  <li> <small>this is not that important</small> (<code>small</code> markup used)
+  <li> <strike>overstruck</strike> (<code>strike</code> markup used; note:
+       <code>s</code> is a nonstandard synonym for <code>strike</code>)
+  <li> <strong>this is highlighted text</strong> (<code>strong</code>
+       markup used)
+  <li> In order to test how subscripts and superscripts (<code>sub</code> and
+       <code>sup</code> markup) work inside running text, we need some
+       dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O
+       (where subscripts occur). So here is some fill so that
+       you will (hopefully) see whether and how badly the subscripts
+       and superscripts mess up vertical spacing between lines.
+       Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some
+       mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>,
+       and some nested superscripts (exponents) too:
+       e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup>
+       (where 2 and a+b+c should appear as exponents of exponents).
+  <li> <tt>text in monospace font</tt> (<code>tt</code> markup used)
+  <li> <u>underlined</u> text (<code>u</code> markup used)
+  <li> the command <code>cat</code> <var>filename</var> displays the
+       file specified by the <var>filename</var> (<code>var</code> markup
+       used to indicate a word as a variable).
+  <li style="font-family: times, serif; font-size:14pt; font-style:italic"> Sample text formatted with inline CSS
+  (font family, size and style is used)
+</ul>
+
+<p>Some of the elements tested above are typically displayed in a monospace
+font, often using the <em>same</em> presentation for all of them. This
+tests whether that is the case on your browser:</p>
+
+<ul>
+  <li> <code>This is sample text inside code markup</code>
+  <li> <kbd>This is sample text inside kbd markup</kbd>
+  <li> <samp>This is sample text inside samp markup</samp>
+  <li> <tt>This is sample text inside tt markup</tt>
+</ul>
+</custom>
+
+
+<h2 style="background-color: brown; color: bisque;">Links</h2>
+<ul>
+<li> <a href="../index.html">main page</a>
+<li> <a href=
+"http://www.unicode.org/versions/Unicode4.0.0/ch06.pdf"
+title="Writing Systems and Punctuation"
+type="application/pdf"
+>Unicode Standard, chapter&nbsp;6</a>
+</ul>
+
+<p>This is a text paragraph that contains some
+inline links. Generally, inline links (as opposite to e.g. links
+lists) are problematic
+from the
+<a href="http://www.useit.com">usability</a> perspective,
+but they may have use as
+&#8220;incidental&#8221;, less relevant links. See the document
+<cite><a href="links.html">Links Want To Be Links</a></cite>.</p>
+
+<h2><a id="top">Forms</a></h2>
+
+<form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+<div>
+<input type="hidden" name="hidden field" value="42">
+This is a form containing various fields (with some initial
+values (defaults) set, so that you can see how input text looks
+like without actually typing it):</div>
+<div><label for="but">Button:
+<button id="but" type="submit" name="foo" value="bar">A cool<br>button</button></label></div>
+<div><label for="f0">Reset button:
+<input id="f0" type="reset" name="reset" value="Reset"></label></div>
+<div><label for="f1">Single-line text input field: <input id="f1" name="text" size="20" value="Default text."></label></div>
+<div><label for="f2">Multi-line text input field (textarea):</label><br>
+<textarea id="f2" name="textarea" rows="2" cols="20">
+Default text.
+</textarea></div>
+<div>The following two radio buttons are inside
+a <code>fieldset</code> element with a <code>legend</code>:</div>
+<fieldset>
+<legend>Legend</legend>
+<div><label for="f3"><input id="f3" type="radio" name="radio" value="1"> Radio button 1</label></div>
+<div><label for="f4"><input id="f4" type="radio" name="radio" value="2" checked> Radio button 2 (initially checked)</label></div>
+</fieldset>
+<fieldset>
+<legend>Check those that apply</legend>
+<div><label for="f5"><input id="f5" type="checkbox" name="checkbox"> Checkbox 1</label></div>
+<div><label for="f6"><input id="f6" type="checkbox" name="checkbox2" checked> Checkbox 2 (initially checked)</label></div>
+</fieldset>
+<div><label for="f10">A <code>select</code> element with <code>size="1"</code>
+(dropdown box):
+<select id="f10" name="select1" size="1">
+<option>one
+<option selected>two (default)
+<option>three
+</select></label></div>
+<div><label for="f11">A <code>select</code> element with <code>size="3"</code>
+(listbox):</label><br>
+<select id="f11" name="select2" size="3">
+<option>one
+<option selected>two (default)
+<option>three
+</select></div>
+<div><label for="f99">Submit button:
+<input id="f99" type="submit" name="submit" value="Just a test"></label></div>
+</form>
+
+<h2>Tables</h2>
+
+<p>The following table has a caption and background color (border via CSS). The first row and the first column
+contain table header cells (<code>th</code> elements) only; other cells
+are data cells (<code>td</code> elements), with <code>align="right"</code>
+attributes:</p>
+
+<TABLE background="https://mcdn.wallpapersafari.com/medium/1/21/pKXolC.jpg" summary=
+"Each row names a Nordic country and specifies its total area and land area, in square kilometers">
+<CAPTION>Sample table: Areas of the Nordic countries, in sq km</CAPTION>
+<TR><th scope="col">Country</th> <th scope="col">Total area</TH> <th scope="col">Land area</TH>
+<TR><th scope="row">Denmark</TH> <TD ALIGN=RIGHT> 43,070 </TD><TD ALIGN=RIGHT> 42,370</TR>
+<TR><th scope="row">Finland</TH> <TD ALIGN=RIGHT>337,030 </TD><TD ALIGN=RIGHT>305,470</TR>
+<TR><th scope="row">Iceland</TH> <TD ALIGN=RIGHT>103,000 </TD><TD ALIGN=RIGHT>100,250</TR>
+<TR><th scope="row">Norway</TH>  <TD ALIGN=RIGHT>324,220 </TD><TD ALIGN=RIGHT>307,860</TR>
+<TR><th scope="row">Sweden</TH>  <TD ALIGN=RIGHT>449,964 </TD><TD ALIGN=RIGHT>410,928</TR>
+</TABLE>
+
+<p>The next table uses bgcolor, width and style for border:
+<table bgcolor="#00FF00" width="400">
+  <tr>
+    <th bgcolor="#737373" style="text-transform: uppercase">Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td id="cell" bgcolor="#37F790" width="300" lang="ru">January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+
+<h2>HTML Image</h2>
+<p class="important">Add style max-width, so it fits in activity history screen  </p>
+
+<img src="https://cdn.pixabay.com/photo/2020/02/12/16/13/landscape-4843192_960_720.jpg" alt="Trulli" width="500" height="333">
+
+<h2>id attribute test</h2>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+<h2>Character test</h2>
+<p>The following table has some sample characters with
+annotations. If the browser&#8217;s default font does not
+contain all of them, they may get displayed using backup fonts.
+This may cause stylistic differences, but it should not
+prevent the characters from being displayed at all.</p>
+
+<table>
+<tr><th>Char. <th>Explanation <th>Notes
+<tr><td>ê <td>e with circumflex <td>Latin 1 character, should be ok
+<tr><td>&#8212; <td>em dash <td>Windows Latin 1 character, should be ok, too
+<tr><td>&#x100; <td>A with macron (line above) <td>Latin Extended-A character, not present in all fonts
+<tr><td>&Omega; <td>capital omega <td>A Greek letter
+<tr><td>&#x2212; <td>minus sign <td>Unicode minus
+<tr><td>&#x2300; <td>diameter sign <td>relatively rare in fonts
+</table>
+
+<HR TITLE="Information about this document">
+
+<address>
+<a href="../personal.html" hreflang="en" lang="fi">Jukka Korpela</a>
+</address>
+<div>
+<A TITLE=
+"ISO 8601, the date and time representation standard"
+HREF="../iso8601.html">
+Date</A> of creation: 2000-09-15.
+Last update: 2013-03-21.
+</div>
+
+
+
+          
+                    
+          
+          <article id="text__paragraphs">
+            <header><h1>Paragraphs</h1></header>
+            <div>
+              <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__blockquotes">
+            <header><h1>Blockquotes</h1></header>
+            <div>
+              <blockquote>
+                <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
+                <p>It is typically distinguished visually using indentation and a different typeface or smaller size quotation. It may or may not include a citation, usually placed at the bottom.</p>
+                <cite><a href="#!">Said no one, ever.</a></cite>
+              </blockquote>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__lists">
+            <header><h1>Lists</h1></header>
+            <div>
+              <h3>Definition list</h3>
+              <dl>
+                <dt>Definition List Title</dt>
+                <dd>This is a definition list division.</dd>
+              </dl>
+              <h3>Ordered List</h3>
+              <ol>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+              </ol>
+              <h3>Unordered List</h3>
+              <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+              </ul>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__hr">
+            <header><h1>Horizontal rules</h1></header>
+            <div>
+              <hr>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__tables">
+            <header><h1>Tabular data</h1></header>
+            <table>
+              <caption>Table Caption</caption>
+              <thead>
+                <tr>
+                  <th>Table Heading 1</th>
+                  <th>Table Heading 2</th>
+                  <th>Table Heading 3</th>
+                  <th>Table Heading 4</th>
+                  <th>Table Heading 5</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Table Footer 1</th>
+                  <th>Table Footer 2</th>
+                  <th>Table Footer 3</th>
+                  <th>Table Footer 4</th>
+                  <th>Table Footer 5</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>Table Cell 1</td>
+                  <td>Table Cell 2</td>
+                  <td>Table Cell 3</td>
+                  <td>Table Cell 4</td>
+                  <td>Table Cell 5</td>
+                </tr>
+                <tr>
+                  <td>Table Cell 1</td>
+                  <td>Table Cell 2</td>
+                  <td>Table Cell 3</td>
+                  <td>Table Cell 4</td>
+                  <td>Table Cell 5</td>
+                </tr>
+                <tr>
+                  <td>Table Cell 1</td>
+                  <td>Table Cell 2</td>
+                  <td>Table Cell 3</td>
+                  <td>Table Cell 4</td>
+                  <td>Table Cell 5</td>
+                </tr>
+                <tr>
+                  <td>Table Cell 1</td>
+                  <td>Table Cell 2</td>
+                  <td>Table Cell 3</td>
+                  <td>Table Cell 4</td>
+                  <td>Table Cell 5</td>
+                </tr>
+              </tbody>
+            </table>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__code">
+            <header><h1>Code</h1></header>
+            <div>
+              <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
+              <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
+              <p><strong>Sample output:</strong> <samp>This is sample output from a computer program.</samp></p>
+              <h2>Pre-formatted text</h2>
+              <pre>P R E F O R M A T T E D T E X T
+  ! " # $ % &amp; ' ( ) * + , - . /
+  0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+  @ A B C D E F G H I J K L M N O
+  P Q R S T U V W X Y Z [ \ ] ^ _
+  ` a b c d e f g h i j k l m n o
+  p q r s t u v w x y z { | } ~ </pre>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__inline">
+            <header><h1>Inline elements</h1></header>
+            <div>
+              <p><a href="#!">This is a text link</a>.</p>
+              <p><strong>Strong is used to indicate strong importance.</strong></p>
+              <p><em>This text has added emphasis.</em></p>
+              <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
+              <p>The <i>i element</i> is text that is offset from the normal text.</p>
+              <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>
+              <p><del>This text is deleted</del> and <ins>This text is inserted</ins>.</p>
+              <p><s>This text has a strikethrough</s>.</p>
+              <p>Superscript<sup>®</sup>.</p>
+              <p>Subscript for things like H<sub>2</sub>O.</p>
+              <p><small>This small text is small for for fine print, etc.</small></p>
+              <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+              <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></p>
+              <p><cite>This is a citation.</cite></p>
+              <p>The <dfn>dfn element</dfn> indicates a definition.</p>
+              <p>The <mark>mark element</mark> indicates a highlight.</p>
+              <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
+              <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="text__comments">
+            <header><h1>HTML Comments</h1></header>
+            <div>
+              <p>There is comment here: <!--This comment should not be displayed--></p>
+              <p>There is a comment spanning multiple tags and lines below here.</p>
+              <!--<p><a href="#!">This is a text link. But it should not be displayed in a comment</a>.</p>
+              <p><strong>Strong is used to indicate strong importance. But, it should not be displayed in a comment</strong></p>
+              <p><em>This text has added emphasis. But, it should not be displayed in a comment</em></p>-->
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+        </section>
+        
+        
+<header><h1>WBR tag</h1></header>        
+<style>
+ .word { font-size: 2em; }
+ wbr { display: inline-block; }
+</style>
+
+<p>Самое длинное слово из химии c wbr</p>
+<p class="word">метоксихлор<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</p>      
+
+<header><h1>VIDEO tag</h1></header>      
+  <video width="500" height="400" controls>
+    <source src="video/jane.ogv" type='video/ogg; codecs="theora, vorbis"'>
+    <source src="video/jane.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    <source src="video/jane.webm" type='video/webm; codecs="vp8, vorbis"'>
+    <track kind="subtitles" src="video/jane.en.srt" srclang="en" label="English">
+    <track kind="subtitles" src="video/jane.ua.srt" srclang="uk" label="Український">
+    <track kind="subtitles" src="video/jane.ru.srt" srclang="ru" label="Русский">
+     Тег video не поддерживается вашим браузером.
+  </video>
+
+
+<h1>The template Tag</h1>
+<style>
+.myClass {
+  color: white;
+  background-color: DodgerBlue;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+</style>
+
+<p>Click the button to fill the web page with one new DIV element for each item in an array.</p>
+
+<p>The HTML code of each DIV element is found in the TEMPLATE element.</p>
+
+<button onclick="showContent()">Show content</button>
+
+<template>
+  <div class="myClass">I like: </div>
+</template>
+
+<script>
+var myArr = ["Audi", "BMW", "Ford", "Honda", "Jaguar", "Nissan"];
+
+function showContent() {
+  var temp, item, a, i;
+  //get the template element:
+  temp = document.getElementsByTagName("template")[0];
+  //get the DIV element from the template:
+  item = temp.content.querySelector("div");
+  //for each item in the array:
+  for (i = 0; i < myArr.length; i++) {
+    //Create a new node, based on the template:
+    a = document.importNode(item, true);
+    //Add data from the array:
+    a.textContent += myArr[i];
+    //append the new node wherever you like:
+    document.body.appendChild(a);
+  }
+}
+</script>
+
+<h1>The summary Tag</h1>
+  <details>
+   <summary>Информация об авторе</summary>
+   <p>Бендер Родригез</p>
+  </details>
+
+
+<h1>The Ruby and RT Tag</h1>  
+  <style>
+   p:lang(zh-CN) {
+    font-size: 2em;
+   }
+  </style>
+
+ <body>
+  <p lang="zh-CN">
+   <ruby>
+    汉<rt>hàn</rt>
+    字<rt>zì</rt>
+        字 <rp>(</rp><rt>zì</rt><rp>)</rp>
+   </ruby>
+  </p>
+
+<h1>The Picture tag</h1>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+<h1>The Param tag</h1>
+<pre>
+<code>
+<object data="/wp-content/uploads/flamingos.ogg">
+<param name="controller" value="true">
+</object>
+</code>
+</pre>
+
+<video controls="" autoplay="" name="media"><source src="https://html.com/wp-content/uploads/flamingos.ogg" type="audio/ogg">
+</video>
+
+
+<h1>The Output tag</h1>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
+
+<h1>The Noscript tag</h1>
+<noscript><p>Ваш браузер не поддерживает скрипты!</p></noscript> 
+
+<h1>The Noframes tag</h1>
+<frameset cols="25%,50%,25%">
+  <frame src="frame_a.htm">
+  <frame src="frame_b.htm">
+  <frame src="frame_c.htm">
+  <noframes>Sorry, your browser does not handle frames!</noframes>
+</frameset>
+
+
+<h1>The Map tag</h1>
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+  <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+  <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+</map>
+
+<h1>The Embed element</h1>
+<embed src="helloworld.swf">
+
+<h1>The Dialog element</h1>
+
+<table>
+  <tr>
+    <th>January <dialog open>This is an open dialog window</dialog></th>
+    <th>February</th>
+    <th>March</th>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>28</td>
+    <td>31</td>
+  </tr>
+</table>
+
+<p><b>Note:</b> The dialog tag is not supported in Edge/Internet Explorer.</p>
+
+
+<h1>The Data element</h1>
+<ul>
+  <li><data value="21053">Cherry Tomato</data></li>
+  <li><data value="21054">Beef Tomato</data></li>
+  <li><data value="21055">Snack Tomato</data></li>
+</ul>
+
+
+<h1>The Colgroup element</h1>
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>My first CSS</td>
+    <td>$49</td>
+  </tr>
+</table>
+
+<h1>The Center element</h1>
+<center>This text will be center-aligned.</center>
+<p>The center element is not supported in HTML5. Use CSS instead.</p>
+
+
+<h1>The bdo element</h1>
+<p>This paragraph will go left-to-right.</p>  
+<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>  
+
+
+<h1>The bdi element</h1>
+<ul>
+ <li>User <bdi>hrefs</bdi>: 60 points</li>
+ <li>User <bdi>jdoe</bdi>: 80 points</li>
+ <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+
+
+<h1>The base element</h1>
+<p><img src="images/stickman.gif" width="24" height="39" alt="Stickman"> - Notice that we have only specified a relative address for the image. Since we have specified a base URL in the head section, the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".</p>
+
+<p><a href="tags/tag_base.asp">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+
+
+<h1>The aside element</h1>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<h1>The Applet element</h1>
+ <p>Текущее время: <applet code="Clock.class" width="60" height="10">
+    Ваш браузер не поддерживает Java-апплеты.
+  </applet></p>
+
+
+
+
+
+
+
+
+
+        <section id="embedded">
+          <header><h1>Embedded content</h1></header>
+          <article id="embedded__images">
+            <header><h2>Images</h2></header>
+            <div>
+              <h3>No <code>&lt;figure&gt;</code> element</h3>
+              <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
+              <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
+              <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
+              <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
+              <figure>
+                <img src="http://placekitten.com/420/420" alt="Image alt text">
+                <figcaption>Here is a caption for this image.</figcaption>
+              </figure>
+            </div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__audio">
+            <header><h2>Audio</h2></header>
+            <div><audio controls="">audio</audio></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__video">
+            <header><h2>Video</h2></header>
+            <div><video controls="">video</video></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__canvas">
+            <header><h2>Canvas</h2></header>
+            
+            <div><canvas height='32' width='48' id='example_x'>Обновите браузер</canvas></div>
+		        <script>
+			      var example_x = document.getElementById("example_x"),
+			      ctx     = example_x.getContext('2d');
+			      ctx.fillRect(0, 0, example_x.width, example_x.height);
+		        </script>
+            
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__meter">
+            <header><h2>Meter</h2></header>
+            <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__progress">
+            <header><h2>Progress</h2></header>
+            <div><progress>progress</progress></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__svg">
+            <header><h2>Inline SVG</h2></header>
+            <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+          <article id="embedded__iframe">
+            <header><h2>IFrame</h2></header>
+            <div><iframe src="index.html" height="300"></iframe></div>
+            <footer><p><a href="#top">[Top]</a></p></footer>
+          </article>
+        </section>
+        <section id="forms">
+          <header><h1>Form elements</h1></header>
+          <form>
+            <fieldset id="forms__input">
+              <legend>Input fields</legend>
+              <p>
+                <label for="input__text">Text Input</label>
+                <input id="input__text" type="text" placeholder="Text Input">
+              </p>
+              <p>
+                <label for="input__password">Password</label>
+                <input id="input__password" type="password" placeholder="Type your Password">
+              </p>
+              <p>
+                <label for="input__webaddress">Web Address</label>
+                <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+              </p>
+              <p>
+                <label for="input__emailaddress">Email Address</label>
+                <input id="input__emailaddress" type="email" placeholder="name@email.com">
+              </p>
+              <p>
+                <label for="input__phone">Phone Number</label>
+                <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+              </p>
+              <p>
+                <label for="input__search">Search</label>
+                <input id="input__search" type="search" placeholder="Enter Search Term">
+              </p>
+              <p>
+                <label for="input__text2">Number Input</label>
+                <input id="input__text2" type="number" placeholder="Enter a Number">
+              </p>
+              <p>
+                <label for="input__text3" class="error">Error</label>
+                <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+              </p>
+              <p>
+                <label for="input__text4" class="valid">Valid</label>
+                <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__select">
+              <legend>Select menus</legend>
+              <p>
+                <label for="select">Select</label>
+                <select id="select">
+                  <optgroup label="Option Group">
+                    <option>Option One</option>
+                    <option>Option Two</option>
+                    <option>Option Three</option>
+                  </optgroup>
+                </select>
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__checkbox">
+              <legend>Checkboxes</legend>
+              <ul class="list list--bare">
+                <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
+                <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
+                <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
+              </ul>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__radio">
+              <legend>Radio buttons</legend>
+              <ul class="list list--bare">
+                <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
+                <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
+                <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
+              </ul>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__textareas">
+              <legend>Textareas</legend>
+              <p>
+                <label for="textarea">Textarea</label>
+                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__html5">
+              <legend>HTML5 inputs</legend>
+              <p>
+                <label for="ic">Color input</label>
+                <input type="color" id="ic" value="#000000">
+              </p>
+              <p>
+                <label for="in">Number input</label>
+                <input type="number" id="in" min="0" max="10" value="5">
+              </p>
+              <p>
+                <label for="ir">Range input</label>
+                <input type="range" id="ir" value="10">
+              </p>
+              <p>
+                <label for="idd">Date input</label>
+                <input type="date" id="idd" value="1970-01-01">
+              </p>
+              <p>
+                <label for="idm">Month input</label>
+                <input type="month" id="idm" value="1970-01">
+              </p>
+              <p>
+                <label for="idw">Week input</label>
+                <input type="week" id="idw" value="1970-W01">
+              </p>
+              <p>
+                <label for="idt">Datetime input</label>
+                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z">
+              </p>
+              <p>
+                <label for="idtl">Datetime-local input</label>
+                <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__action">
+              <legend>Action buttons</legend>
+              <p>
+                <input type="submit" value="<input type=submit>">
+                <input type="button" value="<input type=button>">
+                <input type="reset" value="<input type=reset>">
+                <input type="submit" value="<input disabled>" disabled>
+              </p>
+              <p>
+                <button type="submit">&lt;button type=submit&gt;</button>
+                <button type="button">&lt;button type=button&gt;</button>
+                <button type="reset">&lt;button type=reset&gt;</button>
+                <button type="button" disabled>&lt;button disabled&gt;</button>
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
+          </form>
+        </section>
+      </main>
+      <footer role="contentinfo">
+        <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>
